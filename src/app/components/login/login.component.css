@@ -1,0 +1,37 @@
+mat-card {
+  align-items: center;
+  padding: 40px;
+  background-color: #0367A6;
+
+}
+
+.jumbotron {
+  align-items: center;
+  padding: 90px;
+
+}
+
+body #main-section {
+  background-color: #0367A6;
+  font-family: 'Aboreto', cursive;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#login form {
+  align-items: center;
+  padding: 40px;
+  color: white;
+  background-color: #0367A6;
+}
+
+mat-form-field{
+  margin: 10px;
+  color: white;
+
+}
+
+button {
+  color: white;
+}

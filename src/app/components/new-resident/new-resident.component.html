@@ -1,0 +1,142 @@
+<div class="offset-lg-3 p-lg-5  my-5 text-center">
+  <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">New Resident Form</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">ResidentID</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">SAResidentID</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="nnnnnnnnn" required="">
+            <div class="invalid-feedback" style="width: 100%;">
+              Your ID is required.
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="mb-3">
+          <label for="dateofBirth">Date Of Birth<span class="text-muted"> (mm/dd/yyyy)</span></label>
+          <input type="text" class="form-control" id="dateofBirth" >
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="sex">Sex</label>
+            <select class="custom-select d-block w-100" id="sex" required="">
+              <option value="">Choose...</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Intersex</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select your sex.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Gender</label>
+            <select class="custom-select d-block w-100" id="gender" required="">
+              <option value="">Choose...</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Transgender</option>
+              <option>Non-binary</option>
+              <option>Gender Fluid</option>
+              <option>Other</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide your gender.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+              <label for="pronouns">Pronouns</label>
+              <select class="custom-select d-block w-100" id="sex" required="">
+                <option value="">Choose...</option>
+                <option>he/him/his</option>
+                <option>she/her/hers</option>
+                <option>they/them</option>
+              </select>
+
+              <div class="invalid-feedback">
+                Please select preferred pronouns.
+              </div>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="mb-3">
+          <label for="residentFeatures">Resident Features<span class="text-muted"><em> </em></span></label>
+          <textarea rows="5" class="form-control" id="residentFeatures" placeholder="Please provide one or a few distinguishing features of the resident. "></textarea>
+        </div>
+
+        <hr class="mb-4">
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+              <h4 class="mb-3">Services</h4>
+              <div class="d-block my-3">
+                  <div class="custom-control custom-checkbox">
+                      <input id="snacks" name="services" type="checkbox" class="custom-control-input" checked="" required="">
+                      <label class="custom-control-label" for="snacks"> Snacks</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                      <input id="dinners" name="services" type="checkbox" class="custom-control-input" required="">
+                      <label class="custom-control-label" for="dinners">Dinners</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                      <input id="laundry" name="services" type="checkbox" class="custom-control-input" required="">
+                      <label class="custom-control-label" for="laundry">Laundry</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                      <input id="hygiene" name="services" type="checkbox" class="custom-control-input" required="">
+                      <label class="custom-control-label" for="hygiene">Hygiene</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                      <input id="mentalHealth" name="services" type="checkbox" class="custom-control-input" required="">
+                      <label class="custom-control-label" for="mentalHealth">Mental Health</label>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 mb-3">
+              <label for="disciplinaryActions">Disciplinary Actions</label>
+              <select class="custom-select d-block w-100" id="disciplinaryActions" required="">
+                <option value="">Choose...</option>
+                <option>None</option>
+                <option>Warning</option>
+                <option>Education</option>
+                <option>Last Chance Contract</option>
+                <option>Step Away</option>
+              </select>
+
+              <div class="invalid-feedback">
+                Please select preferred pronouns.
+              </div>
+
+          </div>
+        </div>
+
+
+
+        <hr class="mb-4">
+        <button class="btn btn-danger btn-lg btn-block" type="submit">Submit Form</button>
+      </form>
+    </div>
+</div>
